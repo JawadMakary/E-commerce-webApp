@@ -1,0 +1,248 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1529279363962-3480726a0a7e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__optionLineOne {
+  text-decoration: none;
+
+  font-size: 15px;
+}
+.header__optionLineTwo {
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+.loginScreen__button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+}
+
+.loginScreen__body {
+  left: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.loginScreen__body > h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.loginScreen__body > h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  border: none;
+  max-width: 600px;
+  width: 30%;
+}
+.loginScreen__getStarted {
+  padding: 15px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.45s ease-Out;
+  background-color: #0e0b31;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.loginScreen__getStarted:hover {
+  transform: scale(1.1);
+}
+.loginScreen__input {
+  margin: 20px;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: white;
+    text-shadow: 0 0 0.6rem white, 0 0 1.5rem #0e0b31,
+      -0.2rem 0.1rem 1rem #0e0b31, 0.2rem 0.1rem 1rem #0e0b31,
+      0 -0.5rem 2rem #0e0b31, 0 0.5rem 3rem white;
+  }
+  28%,
+  33% {
+    color: white;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: white;
+    text-shadow: none;
+  }
+}
+
+.loginscreen_h1 {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+.loginscreen_h2 {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem white, 0 0 1.5rem #0e0b26,
+      -0.2rem 0.1rem 1rem #0e0b27, 0.2rem 0.1rem 1rem #0e0b31,
+      0 -0.5rem 2rem #0e0b33, 0 0.5rem 3rem white;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

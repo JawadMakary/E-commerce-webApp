@@ -1,0 +1,42 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 140px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.p {
+  color: black;
+
+  text-align: center;
+  margin-right: 20px;
+}
+.pc {
+  color: black;
+  margin-right: 14px;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #bfc0c0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+
+  text-decoration: none;
+  font-size: 0.8em;
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.45s ease-Out;
+  overflow: hidden;
+  cursor: pointer;
+}
+.pc:hover {
+  transform: scale(1.1);
+}

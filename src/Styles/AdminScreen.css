@@ -1,0 +1,317 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* table {
+  border-collapse: collapse;
+  width: 90vw;
+  box-shadow: 3px 3px 13px rgba(236, 224, 224, 0.3),
+    -1.5px -1.5px 9px rgba(235, 231, 231, 0.616);
+  color: #c5aa6a;
+}
+th,
+td {
+  padding: 0.25rem;
+  text-align: center;
+  border: 1px solid #ccc;
+} */
+.adminScreen {
+  position: relative;
+  height: 100%;
+
+  background-image: url("https://images.unsplash.com/photo-1529279363962-3480726a0a7e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.adminScreen__body {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+  color: #fff;
+
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.adminScreen__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: white;
+    text-shadow: 0 0 0.6rem white, 0 0 1.5rem #0e0b31,
+      -0.2rem 0.1rem 1rem #0e0b31, 0.2rem 0.1rem 1rem #0e0b31,
+      0 -0.5rem 2rem #0e0b31, 0 0.5rem 3rem white;
+  }
+  28%,
+  33% {
+    color: white;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: white;
+    text-shadow: none;
+  }
+}
+
+.adminScreen__header {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem white, 0 0 1.5rem #0e0b26,
+      -0.2rem 0.1rem 1rem #0e0b27, 0.2rem 0.1rem 1rem #0e0b31,
+      0 -0.5rem 2rem #0e0b33, 0 0.5rem 3rem white;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#logoutBtn {
+  border: transparent;
+  background: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background-color: #b8bed8;
+  display: none;
+}
+
+tr:first-child {
+  border-top: none;
+  background: #428bca;
+  color: #fff;
+}
+
+tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+td {
+  display: block;
+}
+
+td:first-child {
+  margin-top: 0.5em;
+}
+
+td:last-child {
+  margin-bottom: 0.5em;
+}
+
+td:before {
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+table {
+  color: #333;
+  border-radius: 0.4em;
+  overflow: hidden;
+}
+
+tr {
+  border-color: #bfbfbf;
+}
+
+th,
+td {
+  padding: 0.5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  td:before {
+    display: none;
+  }
+  th,
+  td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+  }
+  th:first-child,
+  td:first-child {
+    padding-left: 0;
+  }
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+  th,
+  td {
+    padding: 1em !important;
+  }
+}
